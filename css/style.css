@@ -269,5 +269,10 @@ footer a {
   }
 
 }
-
+ @media (min-width: 1025px){
+   body {
+     max-width: 1200px;
+     margin: auto;
+   }
+ }
 
