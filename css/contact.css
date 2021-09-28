@@ -2,50 +2,45 @@
     margin: 0;
     padding: 0;
 }
-body{     
+body{       
     background-image: url("../assets/image.webp");        
     background-size: cover;
     background-attachment:fixed;
 }
-.formContainer {        
-    height: 100vh;
-    width: 100vw;
+.formContainer {              
+  min-height: 100vh;
     display: flex;    
     justify-content: center;
     align-items: center;
 }
 
 .form {        
+  min-width: max-content;
+  min-height: max-content;
+  padding: 2rem;
+  margin:auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: space-between;    
     align-items: center;    
     border-radius: 1%;
-    background-color:papayawhip;
+    background-color:rgb(204, 178, 178, 0.9);
     opacity: .9;
-    height: 600px;
-    width: 800px;
+    
+
 }
-.form > input, textarea {
-    font-family: 'Roboto', sans-serif;
+.form input, textarea {    
     font-size: 1.2rem;    
-    margin-bottom: 1rem;
-    width: 70%;
+    margin-bottom:.5rem;        
     background-color: white;        
 }
 .form textarea{
+  overflow: auto;
     resize: none;
-}
-.form label{       
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin: 0 2rem 1.5rem 2rem;
 }
 
-
-.btn {
-    margin: 3rem 0;
-    
+.btn {      
     align-self: center;    
 }
 .btn input {
@@ -57,14 +52,8 @@ body{
     border-radius: 5%;
 }
 .btn input:hover {
-    /* background-color: rgb(204, 178, 178); */
+    background-color: rgb(204, 178, 178);
     background-color: chocolate;
     color: black;
     cursor: pointer;
 }
-@media screen and (max-width: 576px) {
-.form {
-width: 98%;
-height: 600px;
-}
-};
