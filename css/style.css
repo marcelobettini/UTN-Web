@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;  
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -177,18 +178,38 @@ aside {
 .bg-blue {
   background-color: rgb(26, 102, 163);
 }
-
+.our-products-ttl {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
 .products-container {
   display:flex;
-  justify-content: space-around;
-  
+  justify-content: space-around;  
   flex-wrap: wrap;
-
 }
+
 .products-container article{
+  display: flex;
+  padding: .8rem;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-items: center;
   width: 350px;  
-  border:2px solid black;
+  border:1px solid black;
+  border-radius: 5%;
   margin: 1rem 0;
+}
+.products-container h3{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+.country {
+  font-size: 1.5rem;
+}
+.products-container img {
+  border-radius: 5%;
+  margin: .5rem 0;
 }
 /* flecha para ir a top */
 .arrow-up {
