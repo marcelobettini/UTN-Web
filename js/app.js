@@ -3,6 +3,7 @@ const pullDown = document.getElementById("pull-down");
 const productsContainer = document.getElementById("products-container");
 const url = "https://5fc82e232af77700165ad172.mockapi.io/api/products";
 
+
 hamburger.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
