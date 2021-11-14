@@ -3,7 +3,6 @@ const pullDown = document.getElementById("pull-down");
 const productsContainer = document.getElementById("products-container");
 const url = "https://5fc82e232af77700165ad172.mockapi.io/api/products";
 
-
 hamburger.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -27,16 +26,16 @@ function loadData(data) {
     const p2 = document.createElement("p");
     const p3 = document.createElement("p");
     const p4 = document.createElement("p");
-    
-    h3.innerText=el.name;
-    img.src=el.image;
-    p1.innerText=el.origin;
-    p1.classList.add("country")
-    p2.innerText=el.description;
-    p3.innerText=el.presentation;
-    p4.innerText=el.price;
-    article.append(h3, img,p1, p2, p3, p4)
-    productsContainer.appendChild(article)
+
+    h3.innerText = el.name;
+    img.src = el.image;
+    p1.innerText = el.origin;
+    p1.classList.add("country");
+    p2.innerText = el.description;
+    p3.innerText = el.presentation;
+    p4.innerText = el.price;
+    article.append(h3, img, p1, p2, p3, p4);
+    productsContainer.appendChild(article);
   });
 }
 
